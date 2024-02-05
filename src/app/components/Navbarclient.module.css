@@ -1,0 +1,37 @@
+.logoImage {
+    height: 50px;
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.logoImage:hover {
+    filter: brightness(0.5);
+}
+
+.otherLink {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    margin-left: 10px;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.otherLink:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.otherLink:hover:after {
+    width: 100%;
+    background: #ffffff;
+}
+
+.navbarCustom{
+    background-color: #023047;
+    padding: 20px 70px;
+}

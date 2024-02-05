@@ -1,0 +1,19 @@
+.footerLink {
+    color: #007bff; /* Bootstrap primary color for demonstration */
+    text-decoration: none;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.logoImage {
+    height: 75px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+}
+
+.logoImage:hover {
+    filter: brightness(0.5) grayscale(100%);
+}
