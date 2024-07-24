@@ -3,7 +3,6 @@ import NavbarClient from "@/app/components/Navbar.client";
 import { metadata } from "@/app/metadata";
 import { Inter } from "next/font/google";
 import styles from "./RootLayout.module.css";
-import Document from "next/document";
 
 const inter = Inter({ subsets: ["latin"] });
 

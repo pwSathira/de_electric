@@ -1,0 +1,111 @@
+.aboutSection {
+    text-align: center;
+    padding: 40px;
+    background-color: #f5f5f5;
+    font-family: "Arial", serif;
+}
+
+.aboutSection h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.aboutSection p {
+    margin: 0% 20% 2%;
+    font-size: 1.5rem;
+}
+
+.highlight {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.blockquote {
+    background-color: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-left: 5px solid #ff9800;
+    font-size: 1rem;
+    font-style: italic;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+
+.blockquote p {
+    margin: 0;
+    text-align: left;
+}
+
+.banner {
+    position: relative;
+    background-image: url("https://www.trushieldinsurance.ca/wp-content/uploads/2023/07/electrician.png");
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-family: "Arial Black", serif;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1 {
+    position: relative;
+    font-size: 3rem;
+    z-index: 1;
+}
+
+.quoteButton {
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #DD8A37;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+.quoteButton:hover {
+    background: #9E5F26;
+}
+
+.helpSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.helpText {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.fadeIn {
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}

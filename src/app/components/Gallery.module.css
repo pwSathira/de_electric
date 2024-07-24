@@ -1,0 +1,99 @@
+.galleryContainer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.galleryItem {
+    position: relative;
+    width: 100%;
+    padding-top: 75%; /* Aspect ratio 4:3 */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.galleryItem img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.modal {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.closeButton,
+.prevButton,
+.nextButton {
+    position: absolute;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.closeButton {
+    top: 10px;
+    right: 10px;
+}
+
+.prevButton {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nextButton {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,142 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 5%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.textSection {
+    text-align: left;
+    max-width: 40%;
+}
+
+.getQuoteButton {
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    border-radius: 10px;
+    background: #DD8A37;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+.getQuoteButton:hover {
+    background: #9E5F26;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.card {
+    background-color: #023047;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: background-color 0.9s ease;
+}
+
+.card:hover {
+    background-color: #022330;
+}
+
+
+
+.h1 {
+    position: relative;
+    color: #DD8A37;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #DD8A37;
+    transition: width 0.35s ease;
+}
+
+.h1:hover::after {
+    width: 100%;
+}
+
+.h3 {
+    position: relative;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+.card:hover .h3::after {
+    transform: scaleX(1);
+}
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .overlay {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 2%;
+        text-align: center;
+    }
+
+    .textSection {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cardsContainer {
+        max-width: 100%;
+        gap: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card div {
+        text-align: center;
+    }
+
+    .getQuoteButton {
+        padding: 10px 15px;
+    }
+}

@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
     return (
         <RootLayout>
             <Component {...pageProps} />
-            <FooterClient />
         </RootLayout>
     );
 }
