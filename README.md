@@ -10,9 +10,8 @@ Created by: Sathira Williams
 - [x] Navbar
 - [x] Mobile Navbar
 - [x] Footer
-- [ ] Gallery
-- [ ] Hero Banner
-- [ ] Quote Request
+- [x] Gallery
+- [x] Quote Request
 - [ ] Gallery Uploading System 
 
 ## Tech Stack
