@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import styles from '/src/app/components/Gallery.module.css';
 import Image from 'next/image';
 import Modal from 'react-modal';
+import {Button} from "react-bootstrap";
 
 export default function Gallery() {
     if (typeof window !== 'undefined') {
@@ -59,14 +60,14 @@ export default function Gallery() {
                 className={styles.modal}
                 overlayClassName={styles.overlay}
             >
-                <button onClick={closeModal} className={styles.closeButton}>Close</button>
-                <button onClick={prevImage} className={styles.prevButton}>Previous</button>
+                <Button size="lg" color="danger" variant="ghost" onClick={closeModal} className={styles.closeButton}> Close [X] </Button>
+                <Button size="lg" color="primary" variant="ghost" onClick={prevImage} className={styles.prevButton}> ← Previous </Button>
                 <div className={styles.modalContent}>
                     {images.length > 0 && (
                         <Image src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} layout="fill" objectFit="contain" />
                     )}
                 </div>
-                <button onClick={nextImage} className={styles.nextButton}>Next</button>
+                <Button size="lg" color="primary" variant="ghost" onClick={nextImage} className={styles.nextButton}> Next → </Button>
             </Modal>
         </RootLayout>
     );
