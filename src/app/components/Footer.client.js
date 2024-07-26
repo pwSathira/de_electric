@@ -4,6 +4,7 @@ import styles from './Footerclient.module.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebookF, faGoogle, faInstagram, faTwitter, faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
+import Link from "next/link";
 
 const FooterClient = () => {
     return (
@@ -16,12 +17,12 @@ const FooterClient = () => {
                             Connect with us on social media:
                         </span>
                         <div>
-                            <a href="https://www.facebook.com/profile.php?id=100081929477039"
-                               className="me-4 text-reset"><FontAwesomeIcon icon={faFacebookF}/></a>
-                            <a href="mailto:info@dnipro.ca"
-                               className="me-4 text-reset"><FontAwesomeIcon icon={faEnvelope}/></a>
-                            <a href="https://github.com/pwSathira/Dnipro_Electric"
-                               className="me-4 text-reset"><FontAwesomeIcon icon={faGithub}/></a>
+                            <Link href="https://www.facebook.com/profile.php?id=100081929477039"
+                               className="me-4 text-reset"><FontAwesomeIcon icon={faFacebookF}/></Link>
+                            <Link href="mailto:info@dnipro.ca"
+                               className="me-4 text-reset"><FontAwesomeIcon icon={faEnvelope}/></Link>
+                            <Link href="https://github.com/pwSathira/Dnipro_Electric"
+                               className="me-4 text-reset"><FontAwesomeIcon icon={faGithub}/></Link>
                         </div>
                     </div>
                 </div>
@@ -39,10 +40,10 @@ const FooterClient = () => {
                         </div>
                     <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                         <h5 className="text-uppercase mb-4">Navigation</h5>
-                        <p><a href="/" className="text-light">Home</a></p>
-                        <p><a href="/about" className="text-light">About</a></p>
-                        <p><a href="/quotes" className="text-light">Quotes</a></p>
-                        <p><a href="/gallery" className="text-light">Gallery</a></p>
+                        <p><Link href="/" className="text-light">Home</Link></p>
+                        <p><Link href="/about" className="text-light">About</Link></p>
+                        <p><Link href="/quotes" className="text-light">Quotes</Link></p>
+                        <p><Link href="/gallery" className="text-light">Gallery</Link></p>
 
                     </div>
                     <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
